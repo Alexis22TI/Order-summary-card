@@ -1,0 +1,215 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #e0e8ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main {
+  background-color: #fff;
+  width: 472px;
+  height: 770px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 100px;
+  border-radius: 20px;
+}
+
+header {
+  width: 100%;
+  height: 244px;
+  margin-bottom: 28px;
+}
+
+header .image {
+  width: 100%;
+  height: 244px;
+  border-radius: 20px 20px 0 0;
+  background-image: url(../images/illustration-hero.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 28px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Red Hat Display', sans-serif;
+  margin-top: 20px;
+}
+
+section h1 {
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: #1f2f56;
+}
+
+section p {
+  text-align: center;
+  color: #7280a7;
+  margin: 0 67px;
+}
+
+section .prices {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #f5f7ff;
+  padding: 25px 20px;
+  gap: 15px;
+  border-radius: 10px;
+}
+
+section .prices h2 {
+  font-size: 1rem;
+  font-weight: 900;
+  color: #1f2f56;
+}
+
+section .prices span {
+  position: relative;
+  top: 30px;
+  right: 105px;
+  color: #7280a7;
+}
+
+section .prices a {
+  margin: auto;
+  color: #3829e0;
+  font-weight: 700;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+section .prices a:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+
+section .pay {
+  width: 79%;
+  padding: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #3829e0;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+section .pay::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: ' ';
+  background-color: #3829e0;
+  width: 100%;
+  height: 10px;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+}
+
+section .pay:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+
+section .no-pay {
+  width: 79%;
+  padding: 20px;
+  border: none;
+  background-color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #7280a7;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+section .no-pay:hover {
+  cursor: pointer;
+  color: #1f2f56;
+}
+
+@media screen and (max-width: 540px) {
+  body {
+    background-image: url(../images/pattern-background-mobile.svg);
+    min-height: 675px;
+  }
+  main {
+    width: 374px;
+    height: 629px;
+    margin: 50px 25px;
+  }
+  header {
+    height: 150px;
+    width: 100%;
+  }
+  header .image {
+    height: 164px;
+    width: 100%;
+  }
+  section h1 {
+    font-size: 1.5rem;
+  }
+  section p {
+    font-size: 1rem;
+    margin: 0 35px;
+  }
+  section .prices {
+    padding: 20px 15px;
+  }
+  section .prices h2 {
+    font-size: .9rem;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+  section .prices span {
+    font-size: .9rem;
+    top: 24px;
+    right: 98px;
+  }
+  section .prices a {
+    font-size: .8rem;
+    position: relative;
+    right: 75px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
